@@ -8,8 +8,24 @@
 </head>
 <body>
     <?php
+    /*  "JOGADA ENSAIADA"
+
+       formulário                 programa_php
+       ---------------------      ---------------------
+       action="processa.php"   -> nome do programa 
+                                  que receberá dados
+                                  do formulário
+       method="GET"            -> $_GET[]
+       <input ..name="nome"    -> índice do vetor $_GET 
+
+       ========================================
+       Além do $_GET, existe $_POST (para method='POST')
+       e $_REQUEST que funciona para method=GET e method=POST
+       */
         $nome = $_GET["nome"];
-        echo "<p>Olá! $nome</p>";
+        $idade = $_GET["idade"];
+        echo "<p>Olá! $nome
+              . Sua idade é $idade.</p>";
     ?>
 </body>
 </html>
