@@ -16,14 +16,15 @@
           
         $alunos = [ $al1, $al2, $al3];
 
+        echo "<table border=\"1\">";
         foreach($alunos as $x) {
+            echo "<tr>";
             foreach($x as $v) {
-                echo $v . '<br>';
+                echo "<td>".$v . '</td>';
             }
+            echo "</tr>";
         }
 
-
-        
     ?>
 </body>
 </html>
